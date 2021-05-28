@@ -1,35 +1,41 @@
 variable "registry_name" {
-  type="string"
+  type= string
 }
 
 variable "storage_account_name" {
-  type="string"
+  type = string
 }
 
 variable "container_name" {
-  type="string"
+  type = string
 }
 
 variable "key" {
-  type="string"
+  type = string
 }
 
 variable "access_key" {
-  type="string"
+  type = string
 }
 
 variable "kubernetes_cluster_name" {
-  type="string"
+  type = string
 }
 
 variable "dns_prefix" {
-  type = "string"
+  type = string
 }
 
 variable "client_id" {
-  type = "string"
+  type = string
 }
 
 variable "client_secret" {
-  type = "string"
+  type = string
+}
+variable "resource_group_name" {
+  type = string
+}
+variable "resource_group_location" {
+  type = string
 }
