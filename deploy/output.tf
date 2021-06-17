@@ -4,6 +4,7 @@ output "username" {
 
 output "password" {
   value = "${module.container.password}"
+   sensitive = true
 }
 
 output "login_server" {
