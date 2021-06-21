@@ -13,8 +13,8 @@ terraform {
   backend "azurerm" {}
 }
 
-data "terraform_remote_state" "init" {
-  backend = "azurerm"
+/*data "terraform_remote_state" "init" {
+  backend = "remote"
   config = {
     storage_account_name = "${var.storage_account_name}"
     container_name = "${var.container_name}"
@@ -23,7 +23,7 @@ data "terraform_remote_state" "init" {
     #resource_group_name = "${var.resource_group_name}"
     #resouce_group_location = "${var.resource_group_location}"
   }
-}
+}*/
 module "container" {
   source = "git@github.com:Cyberkabil10/azure-terraformm-modules.git//container-registry"
   registry_name = "${var.registry_name}"
