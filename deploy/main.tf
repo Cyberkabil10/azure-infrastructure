@@ -39,6 +39,6 @@ module "kubernetes" {
   dns_prefix = "${var.dns_prefix}"
   client_id = "${var.client_id}"
   client_secret = "${var.client_secret}"
-  retention_in_days = 30
-  analytics_sku = "PerGB2018"
+  //retention_in_days = 30
+  //analytics_sku = "PerGB2018"
 }
